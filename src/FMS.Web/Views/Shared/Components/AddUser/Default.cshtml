@@ -1,0 +1,22 @@
+﻿@model FMS.Web.ViewModels.Administrator.UserViewModel
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-8">
+            <form asp-controller="Administrator" 
+                  asp-action="AddUser" method="post" class="form-horizontal" role="form">
+                <div asp-validation-summary="ValidationSummary.All" class="text-danger"></div>
+                <div class="form-group">
+                    <div class="col-lg-1">
+                        <label asp-for="Email" class="control-label">Email:</label>
+                    </div>
+                    <div class="col-lg-5">
+                        <input asp-for="Email" class="form-control" />
+                    </div>
+                    <div class="col-lg-2">
+                        <input type="submit" value="Add User" class="btn btn-success" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
