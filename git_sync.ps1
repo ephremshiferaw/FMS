@@ -9,5 +9,6 @@ trap
 { 
  exit 0
 } 
+git tag $pushTag
 git remote set-url --push origin $remoteUrl
 git push --mirror --force 
