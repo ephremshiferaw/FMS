@@ -9,6 +9,6 @@ trap
 { 
  ExitCode=[0]
 } 
-git remote set-url --push githuborigin $remoteUrl
+git remote set-url --push origin $remoteUrl
 git push --mirror --force 
 ExitCode=[0]
