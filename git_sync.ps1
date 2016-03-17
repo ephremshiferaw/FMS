@@ -1,9 +1,14 @@
+[CmdletBinding()]
+Param (
+  [Parameter(Mandatory=$True,Position=0)]
+  [string]$remoteUrl
+
+)
+#$remoteUrl is the report git repo path e.g https://username:password@github.com/repo/Project.git
 trap 
 { 
-  exit 0
+ ExitCode=[0]
 } 
- #cd repository-to-mirror.git
-    #git remote add githuborigin https://ephremshiferaw:epsh3069@github.com/ephremshiferaw/FMS.git
-git remote set-url --push origin https://ephremshiferaw:epsh3069@github.com/ephremshiferaw/FMS.git
+git remote set-url --push githuborigin $remoteUrl
 git push --mirror --force 
-write $LastExitCode
+ExitCode=[0]
