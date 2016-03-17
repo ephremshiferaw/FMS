@@ -1,7 +1,7 @@
 [CmdletBinding()]
 Param (
   [Parameter(Mandatory=$True,Position=0)]
-  [string]$remoteUrl,
+  [string]$remoteUrl
 )
 #$remoteUrl is the report git repo path e.g https://username:password@github.com/repo/Project.git
 trap 
