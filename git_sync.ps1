@@ -1,6 +1,6 @@
 trap 
 { 
-  exit 1 
+  exit 0
 } 
  #cd repository-to-mirror.git
     #git remote add githuborigin https://ephremshiferaw:epsh3069@github.com/ephremshiferaw/FMS.git
