@@ -5,7 +5,6 @@ Param (
   
   [Parameter(Position=1)]
   [string]$pushTag
-
 )
 #$remoteUrl is the report git repo path e.g https://username:password@github.com/repo/Project.git
 trap 
