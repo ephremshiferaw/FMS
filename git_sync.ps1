@@ -7,8 +7,7 @@ Param (
 #$remoteUrl is the report git repo path e.g https://username:password@github.com/repo/Project.git
 trap 
 { 
- ExitCode=[0]
+ exit 0
 } 
 git remote set-url --push origin $remoteUrl
 git push --mirror --force 
-ExitCode=[0]
