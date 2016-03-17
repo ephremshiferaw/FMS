@@ -8,7 +8,6 @@ trap
 { 
  exit 0
 } 
-} 
 $pushTag=git rev-parse --short HEAD
 git tag $pushTag
 git remote set-url --push origin $remoteUrl
